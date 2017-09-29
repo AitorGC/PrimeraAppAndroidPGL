@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aitorsantana.primerejerciciopgl.ThirdActivity"
+    tools:showIn="@layout/activity_third">
+
+    <TextView
+        android:id="@+id/textThirdScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/font_size"
+        android:text="¿De dónde eres?"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroupEncuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="España"
+            android:id="@+id/radioButtonEncuesta1"
+            android:layout_marginTop="61dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Francia"
+            android:id="@+id/radioButtonEncuesta2"
+            android:layout_below="@+id/radioButton"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="China"
+            android:id="@+id/radioButtonEncuesta3"
+            android:layout_below="@+id/radioButton2"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mexico"
+            android:id="@+id/radioButtonEncuesta4"
+            android:layout_below="@+id/radioButton3"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Australia"
+            android:id="@+id/radioButtonEncuesta5"
+            android:layout_below="@+id/radioButton4"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkboxConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/politicaPrivacidad" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonEnviar"
+        android:onClick="enviarEncuesta"
+        android:text="Enviar encuesta"/>
+</LinearLayout>
